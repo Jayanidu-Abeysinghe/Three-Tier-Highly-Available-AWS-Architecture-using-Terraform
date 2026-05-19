@@ -15,7 +15,7 @@ The infrastructure includes:
 
 ---
 
-# Architecture Summary
+## Architecture Summary
 
 The architecture contains three layers:
 
@@ -43,7 +43,7 @@ Terraform was used to automate provisioning of:
 
 ---
 
-# Architecture Workflow
+## Architecture Workflow
 
 ```text
 [Internet User]
@@ -80,7 +80,7 @@ Terraform was used to automate provisioning of:
 
 ---
 
-# Request Flow
+## Request Flow
 
 1. User request reaches the **Public ALB** through the Internet Gateway
 2. Public ALB forwards traffic to **Web EC2 (Next.js + Nginx)** in public subnets
@@ -92,7 +92,7 @@ Terraform was used to automate provisioning of:
 
 ---
 
-# Technologies Used
+## Technologies Used
 
 - Terraform
 - AWS EC2
@@ -110,7 +110,7 @@ Terraform was used to automate provisioning of:
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -129,7 +129,7 @@ Terraform was used to automate provisioning of:
 
 ---
 
-# Module Responsibilities
+## Module Responsibilities
 
 ## network/
 
@@ -183,7 +183,7 @@ Creates:
 
 ---
 
-# How Modules Connect
+## How Modules Connect
 
 1. Root `main.tf` reads values from `terraform.tfvars`
 2. `module.network` creates networking resources and exports subnet IDs
@@ -194,7 +194,7 @@ Creates:
 
 ---
 
-# Terraform Concepts Used
+## Terraform Concepts Used
 
 ## Variables
 
@@ -244,7 +244,7 @@ module.network.public_subnet_id
 
 ---
 
-# Quick Start
+## Quick Start
 
 ## Prerequisites
 
@@ -292,7 +292,7 @@ terraform destroy
 
 ---
 
-# Terraform Best Practices Used
+## Terraform Best Practices Used
 
 - Modular Terraform architecture
 - Reusable modules
@@ -304,7 +304,7 @@ terraform destroy
 
 ---
 
-# Terraform Drift
+## Terraform Drift
 
 Terraform detects infrastructure drift when manual changes are made in AWS.
 
@@ -322,7 +322,7 @@ Terraform detects the difference and shows required corrections.
 
 ---
 
-# Terraform `-target`
+## Terraform `-target`
 
 Used to apply only specific resources/modules.
 
@@ -341,7 +341,7 @@ Not recommended for regular production workflows.
 
 ---
 
-# Outputs
+## Outputs
 
 After deployment Terraform provides:
 
@@ -351,7 +351,7 @@ After deployment Terraform provides:
 
 ---
 
-# Security Notes
+## Security Notes
 
 - `terraform.tfvars` is gitignored
 - `.pem` private keys are gitignored
@@ -364,7 +364,7 @@ Recommended future improvements:
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 - Remote state using S3 + DynamoDB
 - GitHub Actions CI/CD pipeline
@@ -376,7 +376,7 @@ Recommended future improvements:
 
 ---
 
-# Learning Outcomes
+## Learning Outcomes
 
 Through this project I learned:
 
@@ -391,6 +391,6 @@ Through this project I learned:
 
 ---
 
-# Notes
+## Notes
 
 This project was created for learning and portfolio purposes to demonstrate Terraform-based AWS infrastructure deployment using a modular architecture.
