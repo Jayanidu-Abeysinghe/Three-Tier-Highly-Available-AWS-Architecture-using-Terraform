@@ -4,6 +4,12 @@
 
 This project provisions a production-style three-tier web application infrastructure on AWS using Terraform.
 
+<p align="center">
+  <img src="https://github.com/Jayanidu-Abeysinghe/Three-Tier-Highly-Available-AWS-Architecture-using-Terraform/blob/main/images/architecture%20diagram.png" width="800"><br><br>
+  <em>Architecture Diagram</em>
+</p>
+
+
 The infrastructure includes:
 
 - Public Application Load Balancer (ALB)
