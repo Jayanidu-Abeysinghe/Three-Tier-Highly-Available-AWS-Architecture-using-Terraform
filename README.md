@@ -48,6 +48,11 @@ Terraform was used to automate provisioning of:
 - RDS MySQL
 
 <p align="center">
+  <img src="https://github.com/Jayanidu-Abeysinghe/Three-Tier-Highly-Available-AWS-Architecture-using-Terraform/blob/main/images/Screenshot%202026-05-14%20192732.png" width="800"><br><br>
+  <em>Architecture Diagram</em>
+</p>
+
+<p align="center">
   <img src="https://github.com/Jayanidu-Abeysinghe/Three-Tier-Highly-Available-AWS-Architecture-using-Terraform/blob/main/images/Screenshot%202026-05-14%20190015.png" width="800"><br><br>
   <em>Access the application using ALB DNS</em>
 </p>
