@@ -118,6 +118,11 @@ Terraform was used to automate provisioning of:
 
 ## Repository Structure
 
+<p align="center">
+  <img src="https://github.com/Jayanidu-Abeysinghe/Three-Tier-Highly-Available-AWS-Architecture-using-Terraform/blob/main/images/Screenshot%202026-05-04%20213649.png" width="800"><br><br>
+  <em>Terraform apply</em>
+</p>
+
 ```text
 .
 ├── main.tf
